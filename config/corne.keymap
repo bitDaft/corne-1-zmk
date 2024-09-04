@@ -19,11 +19,6 @@
 #define NUMPAD 3
 #define KBDCTRL 4
 
-// other defines
-#define BT(N) &bt BT_SEL N
-#define BTCLR &bt BT_CLR
-#define EPTOG &ext_power EP_TOG
-
 #define AS(keycode) &as LS(keycode) keycode
 
 / {
@@ -113,10 +108,10 @@
                 kbdctrl {                      
                         display-name = "KBDCTRL";                               
                         bindings = <                                    
-   BT(0) BT(1) BT(2) BT(3) BT(4)   ___ &kp C_VOL_UP &kp C_BRI_UP ___ ___   
-   BTCLR ___   ___   ___   ___     ___ &kp C_VOL_DN &kp C_BRI_DN ___ ___ 
-   EPTOG &out OUT_TOG ___   ___   ___     ___ &kp C_MUTE   ___          ___ ___ 
-               ___   ___   ___     ___ ___          ___                    
+   &bt BT_SEL 0      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   ___ &kp C_VOL_UP &kp C_BRI_UP ___ ___   
+   &bt BT_CLR         ___         ___          ___          ___            ___ &kp C_VOL_DN &kp C_BRI_DN ___ ___ 
+   &ext_power EP_TOG &out OUT_TOG ___          ___          ___            ___ &kp C_MUTE   ___          ___ ___ 
+                                  ___          ___          ___            ___ ___          ___                    
                         >;                                              
         };
     };
