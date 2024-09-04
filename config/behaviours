@@ -1,0 +1,22 @@
+#ifndef BEHAVIOURS
+#define BEHAVIOURS
+
+
+behaviors {
+    as: auto_shift {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        tapping_term_ms = <200>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+    ks: key_shift {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+        mods = <(MOD_LSFT)>;
+    };
+};
+
+#endif // BEHAVIOURS

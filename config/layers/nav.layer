@@ -1,0 +1,23 @@
+#ifndef LAYER_NAV
+#define LAYER_NAV
+
+#include "../meta/defines.h" 
+
+// --------------------------------------------------------------------
+// |  -  |  -  |  -  |  -  |  -  |     |  -  |  -      |  KP_7  |  KP_8  | KP_9 |
+// |  -  |  -  |  -  |  -  |  -  |     |  -  |  -      |  KP_4  |  KP_5  | KP_6 |
+// |  -  |  -  |  -  |  -  |  -  |     |  -  |  KP_0   |  KP_1  |  KP_2  | KP_3 |
+//             | -   | -   | -   |     | -   | -       | -      |           
+
+
+#define NAV_LAYOUT NAV {  \
+                        display-name = "NAV";                        \
+                        bindings = <                                    \
+   &kp ESC    ___ &kp LPAR &kp RPAR ___          &kp GRAVE &kp SEMI  &kp SQT     &kp SLASH &kp BSLH   \
+   &kp INSERT ___ &kp LBKT &kp RBKT &to BASE     ___       &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT \
+   &kp DELETE ___ &kp LT   &kp GT   &kp BSPC     ___       ___       ___         ___       ___  \
+                  ___      ___      ___          &kp TAB   &to NUM   &mo KBDCTRL                    \
+                        >;  \
+                };  \
+
+#endif //LAYER_NAV
