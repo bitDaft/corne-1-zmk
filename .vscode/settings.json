@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "*.layer": "c"
+    "*.layer": "c",
+    "defines.h": "c"
   }
 }

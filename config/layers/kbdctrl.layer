@@ -9,14 +9,14 @@
 // |  1  |  X  |  C  |  V  |  B  |     |  N  |  M   | CTRL | META | . |
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
 
-#define KBDCTRL_LAYOUT KBDCTRL {                                                                                                    \
-                display-name = "KBDCTRL";                                                                  \
+#define KBDCTRL_LAYOUT KBDCTRL {                      \
+                display-name = "KBDCTRL";                               \
                         bindings = <                                    \
    BT(1) BT(2) BT(3) BT(4) BT(5)   ___ &kp C_VOL_UP &kp C_BRI_UP ___ ___   \
    BTCLR ___   ___   ___   ___     ___ &kp C_VOL_DN &kp C_BRI_DN ___ ___ \
    EPTOG OUTOG ___   ___   ___     ___ &kp C_MUTE   ___          ___ ___ \
                ___   ___   ___     ___ ___          ___                    \
-                        >;                                                                                   \
+                        >;                                              \
         };
 
 #endif // LAYER_KBDCTRL
