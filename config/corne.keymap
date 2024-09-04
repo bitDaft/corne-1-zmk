@@ -48,7 +48,7 @@
 // |  Z  |  X  |  C   |  D     |  V     |     |  K  |  H   | -    | -    | . |
 //             | LCTRL|  LGUI  | LSHIFT |     | -   | -    | -    |           
             colemakdh {  
-                        display-name = "COLEMAKDH";
+                        display-name = "BASE";
                         bindings = <          
    &kp Q &kp W &kp F     &kp P    &kp B          &kp J     &kp L   &kp U     &kp Y   &kp BSPC
    &kp A &kp R &kp S     &kp T    &kp G          &kp M     &kp N   &kp E     &kp I   &kp O    
@@ -81,8 +81,8 @@
                         display-name = "NUM";                        
                         bindings = <                                    
    &kp F1 &kp F4 &kp F7 &kp F10 &mo NUMPAD  &kp MINUS  AS(N7)   AS(N8) AS(N9) &kp SLASH  
-   &kp F2 &kp F5 &kp F8 &kp F11 ___         &kp PLUS   AS(N4)   AS(N5) AS(N6) &kp STAR        
-   &kp F3 &kp F6 &kp F8 &kp F12 ___         AS(N0)     AS(N1)   AS(N2) AS(N3) &kp EQUAL        
+   &kp F2 &kp F5 &kp F8 &kp F11 &to BASE    &kp PLUS   AS(N4)   AS(N5) AS(N6) &kp STAR        
+   &kp F3 &kp F6 &kp F8 &kp F12 &to NAV     AS(N0)     AS(N1)   AS(N2) AS(N3) &kp EQUAL        
                  ___    ___     &kp LALT    &kp RET    &kp BSPC &kp DOT                      
                         >;  
                 };
