@@ -5,7 +5,6 @@
 #define ___ &trans
 #define XXX &none
 
-
 // Abstract base
 #define BASE 0
 
@@ -15,12 +14,9 @@
 #define NAV 1
 #define NUM 2
 #define NUMPAD 3
-#define KBDCTRL 5
+#define KBDCTRL 4
 
-
-
-
-// other defines 
+// other defines
 #define BT(N) &bt BT_SEL N
 #define BTCLR &bt BT_CLR
 #define EPTOG &ext_power EP_TOG
