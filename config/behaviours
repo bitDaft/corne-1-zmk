@@ -11,12 +11,6 @@ behaviors {
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-    ks: key_shift {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <2>;
-        bindings = <&kp>, <&kp>;
-        mods = <(MOD_LSFT)>;
-    };
 };
 
 #endif // BEHAVIOURS
