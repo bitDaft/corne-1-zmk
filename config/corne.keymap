@@ -69,7 +69,7 @@
    &kp INSERT ___ &kp LBKT &kp RBKT &to BASE       ___       &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT 
    &kp DELETE ___ &kp LT   &kp GT   &kp BSPC       ___       ___       ___         ___       ___  
                   ___      ___      ___            &kp TAB   &to NUM   &mo KBDCTRL      
-                        >;  
+                        >;
                 };
 
 // --------------------------------------------------------------------
