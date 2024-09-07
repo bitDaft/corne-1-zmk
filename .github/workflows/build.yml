@@ -1,16 +1,4 @@
-name: Build firmware
-on:
-  workflow_dispatch:
-  push:
-    paths:
-      - 'build.yaml'
-      - 'config/west.yml'
-      - 'config/boards/shields/corne/*.keymap'
-      - 'config/boards/shields/corne/*.conf'
-      - 'config/boards/shields/nice_view/widgets/*.c'
-      
-      
-# on: [push, pull_request, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: bitDaft/zmk/.github/workflows/build-user-config.yml@main
